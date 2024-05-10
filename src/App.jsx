@@ -6,7 +6,7 @@ const weatherForecasts = [
     img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/day.svg',
     imgAlt: 'sun icon',
     conditions: 'sunny',
-    temperature: '75 F',
+    temperature: '75',
     time: 'Morning',
   },
   {
@@ -14,7 +14,7 @@ const weatherForecasts = [
     img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/night.svg',
     imgAlt: 'moon icon',
     conditions: 'clear',
-    temperature: '60 F',
+    temperature: '60',
     time: 'Night',
   },
   {
@@ -22,7 +22,7 @@ const weatherForecasts = [
     img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/stormy.svg',
     imgAlt: 'clouds with lightning icon',
     conditions: 'stormy',
-    temperature: '80 F',
+    temperature: '80',
     time: 'All Day',
   },
   {
@@ -30,7 +30,7 @@ const weatherForecasts = [
     img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/cloudy-day_t7ckxp.svg',
     imgAlt: 'sun overcast by clouds icon',
     conditions: 'overcast',
-    temperature: '65 F',
+    temperature: '65',
     time: 'Evening',
   },
   {
@@ -38,7 +38,7 @@ const weatherForecasts = [
     img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/cloudy-night.svg',
     imgAlt: 'moon overcast by clouds icon',
     conditions: 'cloudy',
-    temperature: '70 F',
+    temperature: '70',
     time: 'Night',
   },
 ];
