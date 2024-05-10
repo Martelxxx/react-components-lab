@@ -1,35 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import WeatherForecastItems from "/components/WeatherForecast/WeatherForecast.jsx";
 
-function App() {
-  const [count, setCount] = useState(0)
+const weatherForecasts = [
+  {
+    day: 'Mon',
+    img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/day.svg',
+    imgAlt: 'sun icon',
+    conditions: 'sunny',
+    temperature: '75 F',
+    time: 'Morning',
+  },
+  {
+    day: 'Tue',
+    img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/night.svg',
+    imgAlt: 'moon icon',
+    conditions: 'clear',
+    temperature: '60 F',
+    time: 'Night',
+  },
+  {
+    day: 'Wed',
+    img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/stormy.svg',
+    imgAlt: 'clouds with lightning icon',
+    conditions: 'stormy',
+    temperature: '80 F',
+    time: 'All Day',
+  },
+  {
+    day: 'Thu',
+    img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/cloudy-day_t7ckxp.svg',
+    imgAlt: 'sun overcast by clouds icon',
+    conditions: 'overcast',
+    temperature: '65 F',
+    time: 'Evening',
+  },
+  {
+    day: 'Fri',
+    img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/cloudy-night.svg',
+    imgAlt: 'moon overcast by clouds icon',
+    conditions: 'cloudy',
+    temperature: '70 F',
+    time: 'Night',
+  },
+];
 
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <h1>Local Weather Forecast</h1>
+    <section className="grid">
+{weatherForecasts.map((forecast) => (
+  <div className="keys" key={forecast.day}>
+  <WeatherForecastItems forecast={forecast} />
+  </div>
+))}
 
-export default App
+    </section>
+</>
+  );
+};
+export default App;

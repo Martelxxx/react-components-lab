@@ -1,0 +1,41 @@
+body {
+    background-image: url(src/assets/forecast.png);
+    background-size: cover;
+  }
+
+section {
+    display: flex;
+  }
+  
+  section .weather {
+    border: 1px solid #ccc;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .weather span {
+    font-weight: bold;
+  }
+  .grid {
+    gap: 65px;
+    background: transparent; 
+    backdrop-filter: blur(10px);  
+}
+  .keys {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: rgba(137, 207, 240, 0.4); /* 50% transparent red */    
+    backdrop-filter: blur(100px);
+    border-bottom: 1px solid yellow;
+    border-radius: 10px;
+  }
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }  
